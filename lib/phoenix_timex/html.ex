@@ -6,7 +6,6 @@ if Code.ensure_loaded?(Phoenix.HTML) do
   end
   defimpl Phoenix.HTML.Safe, for: [Timex.Date, Timex.Ecto.Date] do
     def to_iodata(t) do
-      IO.inspect t
       Timex.DateFormat.format!(t, "%F", :strftime)
     end
   end
