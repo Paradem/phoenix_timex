@@ -37,6 +37,7 @@ defmodule PhoenixTimex.Mixfile do
   defp package do
     [maintainers: ["Kilian Cirera Sant"],
      links: %{"GitHub" => "https://github.com/Paradem/phoenix_timex"},
+     licenses: ["MIT"]
     ]
   end
 end
