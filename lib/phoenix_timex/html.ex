@@ -3,7 +3,7 @@ if Code.ensure_loaded?(Phoenix.HTML) do
 
   defimpl Phoenix.HTML.Safe, for: [DateTime] do
     def to_iodata(t) do
-      case t |> Date.universal do
+      case t do
         %{hour: 0, minute: 0, second: 0, ms: 0} ->
           DateFormat.format!(t, "%F", :strftime)
         _ ->
