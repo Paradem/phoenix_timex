@@ -4,10 +4,10 @@ PhoenixTimex integrates Phoenix with [Timex](https://github.com/bitwalker/timex)
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
   1. Add phoenix_timex to your list of dependencies in `mix.exs`:
 
         def deps do
           [{:phoenix_timex, "~> 0.0.3"}]
         end
+
+  2. Run `mix deps.get`
