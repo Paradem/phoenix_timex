@@ -1,13 +1,17 @@
-# PhoenixTimex
+# Phoenix Timex
 
-PhoenixTimex integrates Phoenix with [Timex](https://github.com/bitwalker/timex). For now it simply implements the Phoenix.HTML.Safe protocol for %Timex.DateTime, allowing you to use Timex.DateTime objects in your templates to get a default date or date and time format.
+Phoenix Timex integrates Phoenix with [Timex](https://github.com/bitwalker/timex). It simply implements the Phoenix.HTML.Safe protocol for %Timex.DateTime and %Timex.Date, allowing you to use Timex.DateTime and Timex.Date objects in your templates without having to pick a format.
 
 ## Installation
 
   1. Add phoenix_timex to your list of dependencies in `mix.exs`:
 
         def deps do
-          [{:phoenix_timex, "~> 0.0.3"}]
+          [{:phoenix_timex, "~> 1.0.0"}]
         end
 
   2. Run `mix deps.get`
+
+## Support for other Timex versions
+Phoenix Timex 1.x supports Timex 2.x
+Use Phoenix Timex 0.0.3 if you want support for Timex < 2.
