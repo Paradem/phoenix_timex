@@ -29,8 +29,8 @@ defmodule PhoenixTimex.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:phoenix_html, "~> 2.0"},
-     {:timex, "~> 1.0"},
+    [{:phoenix_html, "~> 2.5.1"},
+     {:timex, "~> 2.1.4"},
     ]
   end
 
