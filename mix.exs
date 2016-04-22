@@ -3,7 +3,7 @@ defmodule PhoenixTimex.Mixfile do
 
   def project do
     [app: :phoenix_timex,
-     version: "1.0.0",
+     version: "1.0.1",
      elixir: "~> 1.1",
      package: package,
      description: "Phoenix and Timex integration",
