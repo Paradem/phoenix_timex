@@ -5,7 +5,7 @@ defmodule PhoenixTimexTest do
   doctest PhoenixTimex
 
   test "DateTime" do
-    datetime = DateTime.from({{2016,2,29}, {12, 30, 30, 120}}, "Europe/Brussels")
+    datetime = Timex.to_datetime({{2016, 2, 29}, {12, 30, 30}}, "Europe/Brussels")
     assert Phoenix.HTML.Safe.to_iodata(datetime) == "2016-02-29 12:30:30"
   end
 
