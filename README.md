@@ -2,6 +2,8 @@
 
 Phoenix Timex integrates Phoenix with [Timex](https://github.com/bitwalker/timex). It simply implements the `Phoenix.HTML.Safe` protocol for `%Timex.DateTime` and `%Timex.Date`, allowing you to use them in your templates without having to pick a format.
 
+**NOTE:** Phoenix Timex is only useful for Timex < 3 and Elixir < 1.3. Timex 3 uses Calendar types, wich already implement `Phoenix.HTML.Safe`.
+
 ## Installation
 
   1. Add phoenix_timex to your list of dependencies in `mix.exs`:
